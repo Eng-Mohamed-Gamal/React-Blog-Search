@@ -1,0 +1,413 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.mtop {
+  margin-top: 35px;
+}
+
+.nav {
+  color: #ddd;
+  background-color: rgb(179, 0, 255);
+}
+.nav .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav .flex .flex-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+.nav .flex .flex-1 a {
+  color: #ddd;
+}
+
+.static {
+  background: url("../public/images/banner_image.png") center/cover no-repeat;
+  height: 60vh;
+}
+.static .box {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.static .box h2 {
+  width: 353px;
+  text-align: center;
+  color: #ddd;
+}
+.static .box .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.static .box .flex input {
+  height: 30px;
+  outline: none;
+  padding: 8px 12px;
+  cursor: auto;
+}
+.static .box .flex .img {
+  padding: 0%;
+}
+.static .box .flex .img button {
+  background-color: rgb(179, 0, 255);
+  border-radius: 5px;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+}
+.static .box .flex .img img {
+  height: 30px;
+}
+.static .box h4 {
+  color: red;
+}
+
+.footer {
+  position: sticky;
+  bottom: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: rgb(179, 0, 255);
+  height: 68px;
+}
+.footer h2 {
+  text-align: center;
+  color: #ddd;
+}
+.footer h2 span {
+  margin-left: 8px;
+  color: #3a2850;
+  font-size: 20px;
+}
+
+.home {
+  min-height: 40vh;
+}
+.home h1 {
+  position: relative;
+  text-align: center;
+  overflow: visible;
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
+}
+.home h1::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #3a2850;
+  bottom: -10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-animation: fill 0.6s linear infinite;
+          animation: fill 0.6s linear infinite;
+}
+.home h2.one {
+  text-align: center;
+  text-transform: capitalize;
+}
+.home .container {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 10px;
+}
+.home .container .box {
+  -webkit-box-shadow: 0px 0px 15px #ddd;
+          box-shadow: 0px 0px 15px #ddd;
+  padding: 20px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  background-color: white;
+  position: relative;
+  color: #362323;
+}
+.home .container .box:hover {
+  background-color: rgb(179, 0, 255);
+}
+.home .container .box:hover .tags h3 {
+  background-color: white;
+  color: #362323;
+}
+.home .container .box:hover {
+  color: white;
+}
+.home .container .box:hover a {
+  color: white;
+  border: 1px solid white;
+}
+.home .container .box h2 {
+  font-size: 22px;
+}
+.home .container .box a {
+  color: #b8a3a3;
+  padding: 8px 14px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+.home .container .box span {
+  margin-left: 8px;
+}
+.home .container .box .tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+.home .container .box .tags h3 {
+  text-transform: capitalize;
+  background-color: rgb(179, 0, 255);
+  padding: 6px 10px;
+  border-radius: 6px;
+  color: white;
+}
+.home .paginate {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.home .paginate span {
+  padding: 10px;
+  background-color: rgb(179, 0, 255);
+  margin: 0px 3px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@-webkit-keyframes fill {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 90px;
+  }
+}
+
+@keyframes fill {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 90px;
+  }
+}
+.loder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+.loder img {
+  width: 60px;
+  height: 60px;
+}
+
+.single .container {
+  margin: 40px auto;
+}
+.single .container .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f7f1f1;
+  -webkit-box-shadow: 0px 0px 20px #989191;
+          box-shadow: 0px 0px 20px #989191;
+  padding: 20px;
+}
+.single .container .all .info {
+  width: 60%;
+}
+.single .container .all .info .gr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+.single .container .all .info .gr .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+.single .container .all .info p {
+  font-size: 15px;
+}
+.single .container .all .info .tags h3 {
+  text-transform: capitalize;
+}
+.single .container .all .info .tags h3 span {
+  margin-left: 10px;
+  color: white;
+  background-color: rgb(179, 0, 255);
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+.single .container .all .info .img {
+  background-color: #ddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+.single .container .all .info .img img {
+  width: 200px;
+  height: 200px;
+  margin-left: 20px;
+}
+.single .container .all .info .img .con p {
+  text-transform: capitalize;
+  color: rgb(179, 0, 255);
+  font-weight: bold;
+}
+.single .container .all .info .comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.single .container .all .info .comment img {
+  width: 80px;
+  height: 80px;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+.single .container .all .info .comment p {
+  font-weight: bold;
+  color: rgb(179, 0, 255);
+}
+.single .container .all .news {
+  padding: 20px;
+  padding-top: 0%;
+}
+.single .container .all .news .father {
+  height: 600px;
+  overflow: auto;
+}
+.single .container .all .news h2 {
+  margin-top: 0%;
+}
+.single .container .all .news .tmp {
+  border: 1px solid #ddd;
+  padding: 15px;
+}
+.single .container .all .news a {
+  display: block;
+  margin-bottom: 6px;
+  color: rgb(179, 0, 255);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@media (max-width: 1150px) {
+  .single .container .all {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .single .container .all .info {
+    width: 100%;
+  }
+  .single .container .all .news {
+    margin-top: 30px;
+    padding: 0%;
+  }
+  .single .container .all .news h2 {
+    text-align: center;
+  }
+}
+@media (max-width: 580px) {
+  .single .container .all .info .tags h3 {
+    font-size: 11px;
+  }
+  .single .container .all .info .tags h3 span {
+    margin-left: 4px;
+    padding: 6px 8px;
+  }
+  .single .container .all .info .img {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 5px;
+  }
+  .single .container .all .info .img img {
+    margin: 10px 0px;
+  }
+  .single .container .all .info .img .con p {
+    text-align: center;
+    font-size: 12px;
+  }
+  .single .container .all .info .comments h2 {
+    text-align: center;
+  }
+}
