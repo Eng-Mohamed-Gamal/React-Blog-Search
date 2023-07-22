@@ -4,7 +4,7 @@ import { useTypewriter } from "react-simple-typewriter";
 
 export default function Footer() {
 const [text] = useTypewriter({
-  words : ["Jemy" , "Frond End Developer"],
+  words : ["Jemy" , "Front End Developer"],
   loop : {} , 
   typeSpeed :  70 , 
   deleteSpeed : 50 ,
